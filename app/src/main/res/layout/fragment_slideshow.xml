@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0C0404"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:textAlignment="center"
+        android:layout_marginTop="60px"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:text="Vous avez visonner le dernier Mois"
+        android:textColor="#FFF"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_marginTop="40px"
+        android:layout_below="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="300px"
+            android:layout_height="400px"
+            android:onClick="imageClick"
+            android:src="@drawable/mv1"/>
+        <ImageView
+            android:layout_width="300px"
+            android:layout_height="400px"
+            android:onClick="imageClick"
+            android:src="@drawable/mv2"/>
+        <ImageView
+            android:layout_width="300px"
+            android:layout_height="400px"
+            android:onClick="imageClick"
+            android:src="@drawable/mv3"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_below="@+id/row1"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="300px"
+            android:layout_height="400px"
+            android:onClick="imageClick"
+            android:src="@drawable/mv4"/>
+        <ImageView
+            android:layout_width="300px"
+            android:layout_height="400px"
+            android:onClick="imageClick"
+            android:src="@drawable/mv5"/>
+        <ImageView
+            android:layout_width="300px"
+            android:onClick="imageClick"
+            android:layout_height="400px"
+            android:src="@drawable/mv6"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/row3"
+        android:layout_below="@+id/row2"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="300px"
+            android:onClick="imageClick"
+            android:layout_height="400px"
+            android:src="@drawable/mv7"/>
+        <ImageView
+            android:layout_width="300px"
+            android:onClick="imageClick"
+            android:layout_height="400px"
+            android:src="@drawable/mv8"/>
+        <ImageView
+            android:layout_width="300px"
+            android:layout_height="400px"
+            android:onClick="imageClick"
+            android:src="@drawable/mv9"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C0404"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_marginTop="100px"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:src="@drawable/purplelogo" />
+
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="60px"
+        android:fontFamily="sans-serif-black"
+        android:text="Me Connecter"
+        android:textColor="#FFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginTitle"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="50px"
+        android:fontFamily="sans-serif-black"
+        android:text="Addresse Courriel"
+        android:textSize="15sp"
+        android:textColor="#FFF"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="900px"
+        android:layout_height="100px"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="30px"
+        android:background="#ffffff"
+        android:textColor="#000"
+        android:padding="3px"
+        android:layout_below="@+id/emailLabel"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="50px"
+        android:fontFamily="sans-serif-black"
+        android:text="Mot de Passe"
+        android:textSize="15sp"
+        android:textColor="#FFF"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="900px"
+        android:layout_height="100px"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="30px"
+        android:background="#ffffff"
+        android:textColor="#000"
+        android:layout_below="@+id/passwordLabel"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="800px"
+        android:layout_height="150px"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="70px"
+        android:backgroundTint="#7229af"
+        android:textColor="#ffffff"
+        android:text="Connexion"/>
+
+    <TextView
+        android:id="@+id/forgotLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mot de Passe Oublie ?"
+        android:layout_marginLeft="650px"
+        android:layout_marginTop="30px"
+        android:clickable="true"
+        android:textColor="#FFF"
+        android:layout_below="@+id/connectButton"/>
+
+    <TextView
+        android:id="@+id/accountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pas de Compte ? "
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFF"
+        android:layout_marginTop="40px"
+        android:fontFamily="sans-serif-black"
+        android:textSize="15sp"
+        android:layout_below="@+id/forgotLabel"/>
+
+
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="400px"
+        android:layout_height="150px"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/accountLabel"
+        android:layout_marginTop="5px"
+        android:backgroundTint="#006400"
+        android:textColor="#ffffff"
+        android:text="M'enregistrer"/>
+
+
+
+
+
+</RelativeLayout>
+
+

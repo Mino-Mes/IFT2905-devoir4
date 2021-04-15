@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C0404"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#7229af"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="40px"
+        android:text="Retour"
+        android:clickable="true"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="800px"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_below="@+id/backButton"
+        android:layout_marginTop="90px"
+        android:fontFamily="sans-serif-black"
+        android:text="Vous Preferez Regarder ?"
+        android:textColor="#FFF"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/movie"
+        android:layout_width="700px"
+        android:layout_height="250px"
+        android:layout_below="@+id/loginTitle"
+        android:text="Films"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_marginTop="100px"
+        android:backgroundTint="#FFF"
+        android:fontFamily="sans-serif-black"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/documentary"
+        android:layout_width="700px"
+        android:layout_height="250px"
+        android:layout_below="@+id/movie"
+        android:text="Series"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_marginTop="20px"
+        android:backgroundTint="#fff"
+        android:fontFamily="sans-serif-black"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/series"
+        android:layout_width="700px"
+        android:layout_height="250px"
+        android:layout_below="@+id/documentary"
+        android:text="Documentaires"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_marginTop="20px"
+        android:backgroundTint="#fff"
+        android:fontFamily="sans-serif-black"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="800px"
+        android:layout_height="150px"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/series"
+        android:layout_marginTop="100px"
+        android:backgroundTint="#7229af"
+        android:textColor="#ffffff"
+        android:text="Suivant"/>
+
+
+</RelativeLayout>
+

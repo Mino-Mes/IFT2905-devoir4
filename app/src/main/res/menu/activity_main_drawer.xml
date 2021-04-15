@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:background="#0C0404">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:background="#0C0404"
+            android:title="Maison" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="Recherche" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:title="Historique" />
+        <item
+            android:id="@+id/nav_switchUser"
+            android:title="Changer d'Utilisateur"
+            android:onClick="ChangeUser"/>
+
+        <item
+            android:id="@+id/nav_logOut"
+            android:title="Déconnexion"
+            android:onClick="Disconnect"/>
+    </group>
+</menu>

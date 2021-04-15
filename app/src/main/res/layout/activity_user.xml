@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C0404"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#7229af"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="40px"
+        android:text="Retour"
+        android:clickable="true"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_below="@+id/backButton"
+        android:layout_marginTop="90px"
+        android:fontFamily="sans-serif-black"
+        android:text="Qui Visonnes?"
+        android:textColor="#FFF"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_marginTop="100px"
+        android:layout_below="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/user1"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:backgroundTint="#FF0080"
+            android:text="User 1"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="80px"
+            />
+
+        <Button
+            android:id="@+id/user2"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:backgroundTint="#0080ff"
+            android:text="User 2"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-black"
+            android:textSize="20dp"
+            android:layout_marginLeft="110px"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_marginTop="100px"
+        android:layout_below="@+id/row1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/user3"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:backgroundTint="#32CD32"
+            android:text="User 3"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-black"
+            android:textSize="20dp"
+            android:layout_marginLeft="80px"
+            />
+
+        <Button
+            android:id="@+id/user4"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:backgroundTint="#ED7014"
+            android:text="User 4"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-black"
+            android:textSize="20dp"
+            android:layout_marginLeft="110px"
+            />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
